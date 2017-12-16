@@ -1,0 +1,78 @@
+.button, input[type=submit], input[type=button]  {
+	display: inline-block;
+	border: 1px solid $color1;
+	padding: 16px 40px;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: $font-heading;
+	font-weight: 500;
+	color: #fff;
+	font-size: 16px;
+	min-width: 220px;
+	text-align: center;	
+	letter-spacing: 1px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	outline: 0;
+	appearance: none;
+	cursor: pointer;
+	background: transparent;
+
+	span {
+		z-index: 1;
+		position: relative;
+	}
+	
+	&:after {
+		content:'';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		will-change: transform;
+		z-index: 3;
+		
+		background: $color1;
+		transform: translateX(-105%);
+		transition: transform 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	}
+
+
+
+	&:hover, &:focus {
+
+		
+
+		&:after {
+			transform: translateX(105%);
+			transition: transform 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+		}
+
+	}
+
+	&:focus {
+
+		box-shadow: 0 0 30px rgba($color1, 0.3);
+
+	}
+
+	&:active {
+
+	}
+
+}
+
+.button--full {
+	background: $color1;
+	transition: 0.3s;
+	&:hover {
+		background-color: darken($color1, 5%);
+	}
+	&:after {
+		display: none;
+	}
+}

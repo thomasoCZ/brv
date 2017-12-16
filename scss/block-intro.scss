@@ -1,0 +1,19 @@
+.block-intro {
+    max-width: calc(30rem + #{$responsive-multiplier});
+
+    &__title {
+        font-family: $font-base;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+    &__text {
+        font-size: 1rem;
+        padding-left: 3rem;
+    }
+
+    &__button {
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+}

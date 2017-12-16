@@ -1,0 +1,19 @@
+.block-details {
+    text-align: center;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    &__phone {
+        font-family: sans-serif;
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+    &__email {
+        font-weight: 500;
+        display: block;
+        font-size: 1.2rem;
+    }
+}

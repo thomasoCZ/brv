@@ -1,0 +1,21 @@
+//@import './jquery.fullpage.min.css';
+
+//atoms
+@import 'variables';
+@import 'mixins';
+@import 'typography';
+@import 'global';
+
+@import 'buttons';
+@import 'forms';
+
+
+//components
+@import 'language-menu';
+@import 'block';
+@import 'block-intro';
+@import 'block-services';
+@import 'block-details';
+@import 'block-form';
+@import 'color-block';
+@import 'contact-form';
